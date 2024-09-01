@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="store-section mt-96 mb-80">
+      <div class="container">
+          <h1 class="h1 fs-48 mb-32 font-bold">門市據點</h1>
+          <div class="d-flex gap-16 select-wrapper">
+              <h2 class="fs-24">選擇分店</h2>
+              <select name="store" id="stores" class="select">
+                  <option value="台北中山旗艦店">台北中山旗艦店</option>
+              </select>
+          </div>
+          <div class="d-flex gap-24 mt-40 item">
+              <div class="card d-flex flex-column">
+                  <img src="../assets/images/storepage-1.png" alt="">
+                  <div class="content">
+                      <h3 class="fs-24 font-bold py-8 px-24 bd-bottom-1-grey">台北中山旗艦店</h3>
+                      <ul class="py-24 py-16 px-24">
+                          <li class="fs-20 d-flex align-items-center gap-11 mb-8 list"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                            </svg>電話：(02)000-1234</li>
+                          <li class="fs-20 d-flex align-items-center gap-11 mb-8 list"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                            </svg>營業時間：10:00-21:00</li>
+                          <li class="fs-20 d-flex align-items-center gap-11 mb-8 list"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                            </svg>地址：台北市中山區南京東路25巷2-1號</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="map text-white d-flex justify-content-center align-items-center">地圖</div>
+          </div>
+          
+      </div>
+  </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

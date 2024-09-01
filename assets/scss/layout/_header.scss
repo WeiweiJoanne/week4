@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+@import "../base/_reset";
+@import "../base/_variable";
+@import "../base/_mixin";
+@import "../base/_base";
+
+header {
+  background-color: $red;
+
+  .nav-container {
+
+      @include Middle {
+          flex-wrap: wrap;
+
+      }
+  }
+
+  .logo {
+      max-width: 80px;
+
+      @include Middle {
+          padding: 12px 0;
+      }
+  }
+
+  nav {
+      margin-left: auto;
+
+      @include Middle {
+          width: 100%;
+
+          .d-flex {
+              flex-wrap: wrap;
+              margin: 0 -12px;
+
+              li {
+                  width: 50%;
+                  text-align: center;
+                  border: 1px solid #fff;
+
+                  a {
+                      padding: 12px 0;
+                  }
+              }
+          }
+      }
+
+      ul {
+          gap: 64px;
+
+          @include Middle {
+              gap: 0
+          }
+      }
+
+      a {
+          padding: 25px 0;
+      }
+  }
+}

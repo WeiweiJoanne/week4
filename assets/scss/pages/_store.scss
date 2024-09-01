@@ -1,0 +1,98 @@
+.store-section {
+
+    .h1 {
+        position: relative;
+        display: flex;
+
+        @include Small {
+            font-size: 24px;
+        }
+
+        &::before {
+            content: '';
+            width: 8px;
+            height: 72px;
+            background: $red;
+            display: inline-block;
+            margin-right: 12px;
+
+            @include Small {
+                height: 36px;
+            }
+        }
+    }
+
+    .select{
+        flex-basis: 304px;
+        color: #495057;
+        border: 1px solid #495057;
+        padding: 6px 12px;
+        @include Small{
+            flex-basis: auto;
+        }
+    }
+    @include Large{
+
+        .item{
+            flex-direction: column;
+        }
+  
+    }
+
+    @include Small{
+        .select-wrapper{
+            flex-direction: column;
+            gap:8px
+        }
+       
+    }
+   
+    .card{
+        flex-basis: 526px;
+        border: 1px solid #00000020;
+        img{
+            object-fit: cover;
+        }
+        @include Large{
+            flex-direction: row;
+            flex-basis: auto;
+            gap:24px;
+            border:none;
+            img,.content{
+                width: 50%;
+            }
+            
+            .content{
+                border: 1px solid $grey
+            }
+        }
+          @include Middle{
+            flex-direction: column;
+            gap:0;
+            border:1px solid $grey;
+            img,.content{
+                width: 100%;
+            }
+            
+            .content{
+                border: none;
+            }
+        }
+        
+    }
+    .map{
+        background-color: #59dea2;
+        width: auto;
+        flex-basis: 746px;
+        @include Large{
+            flex-basis: 415px
+        }
+        @include Small{
+            flex-basis: 208px
+        }
+    }
+
+   
+
+
+}

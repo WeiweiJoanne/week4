@@ -1,0 +1,210 @@
+
+section {
+  &.banner {
+      background-image: url(../assets/images/home-header.png);
+
+      @include Middle {
+          background-image: url(../assets/images/home-header-sm.png);
+      }
+
+
+      .container {
+          overflow: hidden;
+      }
+
+      .text-right {
+          margin: 296px 0 296px auto;
+          
+          @include Small {
+              margin: 144px 0 144px auto;
+              .fs-36 {
+                  font-size: 16px;
+              }
+
+              .fs-64 {
+                  font-size: 24px;
+              }
+          }
+      }
+  }
+
+  &:not(.banner) {
+      padding: 80px 0;
+  }
+
+  &:nth-of-type(2) {
+
+      .cards {
+          margin: 36px -12px;
+
+          @include Middle {
+              flex-wrap: wrap;
+          }
+
+          .card {
+              padding: 0 12px;
+              width: 25%;
+
+              @include Middle {
+                  width: 50%;
+                  margin-bottom: 24px;
+              }
+
+              @include Small {
+                  width: 100%;
+              }
+
+              h3 {
+                  margin: 27px auto 8px;
+              }
+
+              img {
+                  max-width: 83px;
+
+              }
+          }
+      }
+
+  }
+
+  &:nth-of-type(3) {
+
+      .cards {
+          margin: 36px -12px;
+
+          @include Large {
+              flex-wrap: wrap;
+          }
+
+          .card {
+              padding: 0 12px;
+              width: 33.33%;
+
+              @include Large {
+                  width: 100%;
+                  margin-bottom: 24px;
+              }
+
+              h3 {
+                  margin: 8px auto 0;
+              }
+
+              img {
+                  max-width: 416px;
+
+                  @include Large {
+                      max-width: 336px;
+                  }
+
+                  @include Middle {
+                      max-width: 348px;
+                  }
+
+              }
+          }
+      }
+
+  }
+
+  &:nth-of-type(4) {
+      background-image: url(../images/index-bg.png);
+
+      .cards {
+          margin: 36px auto;
+
+          @include Middle {
+              flex-wrap: wrap;
+          }
+
+          .card {
+              width: 50%;
+
+              @include Middle {
+                  width: 100%;
+                  margin-bottom: 24px;
+              }
+
+              img {
+                  max-width: 648px;
+
+                  @include Middle {
+                      max-width: 696px;
+                  }
+              }
+          }
+      }
+  }
+
+  &:nth-of-type(5) {
+
+      .cards {
+          margin: 36px -12px;
+
+          @include Middle {
+              flex-wrap: wrap;
+          }
+
+          .card {
+              padding: 0 12px;
+              width: 25%;
+
+              @include Middle {
+                  width: 50%;
+                  margin-bottom: 24px;
+              }
+
+              @include Small {
+                  width: 100%;
+              }
+
+              .d-flex {
+                  border: 1px solid #DEE2E6;
+              }
+
+              .custumer-intro {
+                  padding: 16px;
+              }
+
+              .date {
+                  margin-top: 72px;
+              }
+
+              img {
+                  max-width: 306px;
+
+                  @include Middle {
+                      max-width: 336px;
+                  }
+
+                  @include Small {
+                      max-width: 348px;
+                  }
+              }
+          }
+      }
+  }
+
+  &.form-section {
+      .form-container {
+          max-width: 660px;
+          padding: 0 12px;
+          margin: 0 auto;
+
+          >p {
+              margin: 48px auto 24px;
+          }
+
+          label {
+              display: block;
+          }
+
+          textarea {
+              max-width: 636px;
+          }
+
+          input[type=button] {
+              max-width: 416px;
+          }
+      }
+  }
+}
