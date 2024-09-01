@@ -1,10 +1,10 @@
 
 section {
   &.banner {
-      background-image: url(../assets/images/home-header.png);
+      background-image: url(/assets/images/home-header.png);
 
       @include Middle {
-          background-image: url(../assets/images/home-header-sm.png);
+          background-image: url(/assets/images/home-header-sm.png);
       }
 
 
